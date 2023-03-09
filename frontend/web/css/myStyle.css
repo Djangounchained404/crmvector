@@ -1,0 +1,62 @@
+label {
+    font-size: 20px;
+
+}
+#departure ,#arrival, #weight {
+
+    width: 300px;
+    background-color: #0b5ed7;
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: auto;
+}
+.departure_cargo , .arrival_cargo , .weight_cargo {
+   margin-top: 25px;
+    text-align: left;
+}
+.all_cargo {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/map.jpg");
+    padding: 25px;
+}
+.select_arrival, .select_departure ,.select_weight {
+    display: flex;
+}
+
+.input-range {
+    color: black;
+}
+.btn_calc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.btn-success{
+    max-width: 35%;
+    font-size: 20px;
+}
+.result_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result_calculate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+
+}
+.calcres {
+    background-color: #fff889;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/*display: flex;*/
+/*align-items: center;*/
+/*justify-content:  center;*/
