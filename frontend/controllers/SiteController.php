@@ -58,14 +58,13 @@ class SiteController extends Controller
             ],
         ];
     }
+
+
     public function actionIndex(){
         if (Yii::$app->request->isAjax) {
             sleep(2);
             $location= $_POST['departure'].'-'.$_POST['arrival'];
-            $model = Cargo::find()->where(['location' => $location])->one();
-            $price= Common::calcPrice($_POST['weight'], $model['zone']);
-            $zone =$model["zone"];
-            return '<div class="calcres"><h5>Стоимость доставки будет :'.' '.$price.'руб.<br> Зона доставки:'.' '.$zone.'</h5></div>' ;
+        return Common::showCalc($location, $_POST['weight']);
         }
         return $this->render('index');
     }
@@ -90,6 +89,12 @@ class SiteController extends Controller
                 "Новосибирск"=>"Новосибирск",
             ));
         }
+    }
+
+
+    public function actionJson()
+    {
+        return $this->render('json');
     }
 
     }

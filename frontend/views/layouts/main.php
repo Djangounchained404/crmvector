@@ -15,6 +15,8 @@ AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
+
+
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
 <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"> </script>-->

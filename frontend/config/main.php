@@ -45,6 +45,7 @@ return [
                 '/'=>'site/index',
                 '/page' => '/site/page',
                 '/sity' => '/site/sity',
+                '/json' => '/site/json',
 
 
 
